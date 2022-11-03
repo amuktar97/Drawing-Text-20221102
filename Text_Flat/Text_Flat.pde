@@ -1,6 +1,7 @@
 //Global Variables
 int appWidth, appHeight, fontSize;
 float titleX, titleY, titleWidth, titleHeight;
+float footerX, footerY, footerWidth, footerHeight;
 String title = "Wahoo!";
 PFont titleFont;
 color purple=#2C08FF, resetDefaultInk=#FFFFFF; //not Night Mode Friendly
@@ -11,10 +12,11 @@ appWidth = width;
 appHeight = height;
 //
 //Population
-titleX = appWidth * 1/4;
+titleX = footerX = appWidth * 1/4;
 titleY = appHeight * 1/10;
-titleWidth = appWidth * 1/2;
-titleHeight = appHeight * 1/10;
+footerY = appHeight * 9/10;
+titleWidth = footerWidth = appWidth * 1/2;
+titleHeight = footerHeight = appHeight * 1/10;
 //
 //Text Setup, single executed code
 //Fonts from OS (Operating System)
@@ -25,6 +27,7 @@ titleFont = createFont("Harrington", 55); //Verified the font exists in Processi
 //
 //Layout or text space and typographical features
 rect(titleX, titleY, titleWidth, titleHeight);
+rect(footerX, footerY, footerWidth, footerHeight);
 //
 //Repeated Executed Code
 fill(purple);
