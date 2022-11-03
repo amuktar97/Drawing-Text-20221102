@@ -4,7 +4,7 @@ float titleX, titleY, titleWidth, titleHeight;
 float footerX, footerY, footerWidth, footerHeight;
 String title = "Wahoo!", footer="Drip";
 PFont titleFont;
-color purple=#2C08FF, resetDefaultInk=#FFFFFF; //not Night Mode Friendly
+color black=#120B0B, resetDefaultInk=#FFFFFF; //not Night Mode Friendly
 //
 size(500, 600); //Portrait
 //Copy Display Algorithm
@@ -30,7 +30,7 @@ rect(titleX, titleY, titleWidth, titleHeight);
 rect(footerX, footerY, footerWidth, footerHeight);
 //
 //Repeated Executed Code
-fill(purple);
+fill(black);
 textAlign(CENTER, BOTTOM);
 //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
 fontSize = 50; //Largest size given window
